@@ -1,4 +1,17 @@
-import {Controller, Get, Post, Delete, HttpCode, Header, BadRequestException, Param, Query, Body} from "@nestjs/common";
+import {
+    Controller,
+    Get,
+    Post,
+    Delete,
+    HttpCode,
+    Header,
+    BadRequestException,
+    Param,
+    Query,
+    Body, Req, Res
+} from "@nestjs/common";
+import {MascotaCreateDto} from "./dto/mascota.create-dto";
+import {validate, ValidationError} from "class-validator";
 
 // http://localhost:3001/juegos-http
 // @Controller('')
@@ -67,16 +80,59 @@ export class HttpJuegoController{
     }
 
 
-    @Post('parametros-cuerpo')
+    /*@Post('parametros-cuerpo')
     parametrosCuerpo(
         @Body() parametrosDeCuertpo
     ){
         console.log('parametrosDeCuerpo',parametrosDeCuertpo)
         return 'registro creado';
+    }*/
+
+
+    @Post('parametros-cuerpo')
+    @HttpCode(200)
+    async parametrosCuerpo(
+        @Body() parametrosDeCuerpo
+    ) {
+        // Promesas
+        const mascotaValida = new MascotaCreateDto();
+        mascotaValida.casada = parametrosDeCuerpo.casada;
+        mascotaValida.edad = parametrosDeCuerpo.edad;
+        mascotaValida.ligada = parametrosDeCuerpo.ligada;
+        mascotaValida.nombre = parametrosDeCuerpo.nombre;
+        mascotaValida.peso = parametrosDeCuerpo.peso;
+        try {
+            const errores: ValidationError[] = await validate(mascotaValida);
+            if (errores.length > 0) {
+                console.error('Errores: ', errores);
+                throw new BadRequestException('Error validando');
+            } else {
+                const mensajeCorrecto = {
+                    mensaje: 'Se creo correctamente'
+                };
+                return mensajeCorrecto;
+            }
+        } catch (e) {
+            console.error('Error', e);
+            throw new BadRequestException('Error validando');
+        }
     }
 
-
-
-
+    @Get('guardarCookieInsegura')
+    guardarCookieInsegura(
+        @Query() parametrosConsulta,
+        @Req() req, //  request - PETICION
+        @Res() res // response - RESPUESTA
+    ) {
+        res.cookie(
+            'galletaInsegura', // nombre
+            'Tengo hambre', // valor
+        );
+        const mensaje = {
+            mensaje: 'ok'
+        };
+        // return mensaje; // NO SE PUEDE USAR RETURN CUANDO SE USA @Res() OJO !!!
+        res.send(mensaje); // METODO EXPRESSJS
+    }
 
 }
