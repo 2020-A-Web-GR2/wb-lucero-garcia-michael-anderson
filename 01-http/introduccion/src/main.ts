@@ -8,7 +8,8 @@ async function bootstrap() {
   //Aqui configuracion antes del app.listen()
   //await app.listen(3000)
 
-  app.use(cookieParser())
+  const cookieParser = require('cookie-parser');
+  app.use(cookieParser('poliburger'));
   await app.listen(3001);
 }
 bootstrap();

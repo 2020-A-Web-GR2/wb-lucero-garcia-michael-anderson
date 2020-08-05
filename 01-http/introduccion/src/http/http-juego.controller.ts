@@ -135,4 +135,46 @@ export class HttpJuegoController{
         res.send(mensaje); // METODO EXPRESSJS
     }
 
+    @Get('mostrarCookies')
+    mostrarCookies(
+        @Req() req
+    ) {
+        const mensaje = {
+            sinFirmar: req.cookies,
+            firmadas: req.signedCookies
+        };
+        return mensaje;
+    }
+
+    @Get('guardarCookieSegura')
+    guardarCookieSegura(
+        @Query() parametrosConsulta,
+        @Req() req, //  request - PETICION
+        @Res() res // response - RESPUESTA
+    ) {
+        res.cookie(
+            'galletaSegura', // nombre
+            'Web :3', // valor
+            {
+                secure: true
+            }
+        );
+        const mensaje = {
+            mensaje: 'ok'
+        };
+        // return mensaje; // NO SE PUEDE USAR RETURN CUANDO SE USA @Res() OJO !!!
+        res.send(mensaje); // METODO EXPRESSJS
+    }
+
+    @Get('/guardarCookieFirmada')
+    guardarCookieFirmada(
+        @Res() res
+    ){
+        res.cookie('firmada', 'poliburguer', {signed: true});
+        const mensaje = {
+            mensaje: 'ok'
+        };
+        res.send(mensaje);
+    }
+
 }

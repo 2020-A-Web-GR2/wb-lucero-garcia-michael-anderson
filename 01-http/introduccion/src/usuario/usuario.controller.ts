@@ -8,7 +8,7 @@ import {
     BadRequestException,
     Param,
     Query,
-    Body, Req, Res
+    Body, Req, Res, Put
 } from "@nestjs/common";
 
 
@@ -35,7 +35,7 @@ export class UsuarioController{
 
 @Get()
     mostrarTodos(){
-        return "ok"
+        return this.arregloUsuarios;
     }
 
     //XML <usuario><nombre>ANDER<nombre/><usuario/>
@@ -79,6 +79,30 @@ export class UsuarioController{
     const indice = this.arregloUsuarios.findIndex(
         (usuario) => usuario.id === Number(parametrosRuta.id)
     )
+        return this.arregloUsuarios[indice];
+    }
+
+
+    @Put(':id')
+    editarUno(
+        @Param() parametrosRuta,
+        @Body() parametrosCuerpo
+    ){
+        const indice = this.arregloUsuarios.findIndex(
+            (usuario) => usuario.id === Number(parametrosRuta.id)
+        )
+        this.arregloUsuarios[indice].nombre = parametrosCuerpo.nombre;
+        return this.arregloUsuarios[indice];
+    }
+
+    @Delete(':id')
+    eliminarUno(
+        @Param() parametrosRuta,
+    ){
+        const indice = this.arregloUsuarios.findIndex(
+            (usuario) => usuario.id === Number(parametrosRuta.id)
+        )
+        this.arregloUsuarios.splice(indice, 1)
         return this.arregloUsuarios[indice];
     }
 
