@@ -1,4 +1,17 @@
-import {BadRequestException, Body, Controller, Get, HttpCode, Param, Post, Put, Query, Req, Res} from "@nestjs/common";
+import {
+    BadRequestException,
+    Body,
+    Controller,
+    Delete,
+    Get,
+    HttpCode,
+    Param,
+    Post,
+    Put,
+    Query,
+    Req,
+    Res
+} from "@nestjs/common";
 import {validate, ValidationError} from "class-validator";
 import {NameSaveDto} from "./dto/name.save-dto";
 import {CalculatorOperationsDto} from "./dto/calculator.operations-dto";
@@ -104,22 +117,22 @@ export class HttpCalculatorController{
         @Req() req
     ) {
 
-        const userName = req.cookies.name;
+        const userName = req.cookies.username;
         var puntos = req.signedCookies.puntos;
-        const suma = new CalculatorOperationsDto();
-        suma.number1 = Number(parametrosDeCuerpo.number1);
-        suma.number2 = Number(parametrosDeCuerpo.number2);
+        const resta = new CalculatorOperationsDto();
+        resta.number1 = Number(parametrosDeCuerpo.number1);
+        resta.number2 = Number(parametrosDeCuerpo.number2);
 
         if(userName !== undefined) {
             try {
-                const errores: ValidationError[] = await validate(suma);
+                const errores: ValidationError[] = await validate(resta);
                 var texto = '';
                 if (errores.length > 0) {
                     console.error('Errores: ', errores);
                     throw new BadRequestException('Error to validate1');
                 } else {
-                    var sumatotal = Number(parametrosDeCuerpo.number1) - Number(parametrosDeCuerpo.number2);
-                    puntos -= Math.abs(sumatotal);
+                    var restatotal = Number(parametrosDeCuerpo.number1) - Number(parametrosDeCuerpo.number2);
+                    puntos -= Math.abs(restatotal);
 
                     if(puntos <= 0){
                         texto += ' y usted ya a consumido todos sus puntos, ahora se restableceran sus puntos a 100';
@@ -133,9 +146,59 @@ export class HttpCalculatorController{
                         {signed: true}
                     )
                     res.send({
-                        message: "la resta de los dos numeros es: " + sumatotal + ' ' + texto
+                        message: "la resta de los dos numeros es: " + restatotal + ' ' + texto
                     })
 
+                }
+            } catch (e) {
+                console.error('Error', e);
+                throw new BadRequestException('Error to validate.');
+            }
+        }else {
+            res.send({
+                message: 'no hay usuarios.'
+            });
+        }
+    }
+
+    @Delete('multiplicar')
+    @HttpCode(200)
+    async multiplicar(
+        @Req() req,
+        @Res() res
+    ) {
+
+        const userName = req.cookies.username;
+        var puntos = req.signedCookies.puntos;
+        const multiplicar = new CalculatorOperationsDto();
+        multiplicar.number1 = Number(req.headers.number1);
+        multiplicar.number2 = Number(req.headers.number2);
+
+        if(userName !== undefined){
+            try {
+                const errores: ValidationError[] = await validate(multiplicar);
+                var texto = '';
+                if (errores.length > 0) {
+                    console.error('Errores: ', errores);
+                    throw new BadRequestException('Error to validate1');
+                } else {
+                    var multiplicaciontotal = Number(multiplicar.number1) * Number(multiplicar.number2);
+                    puntos -= Math.abs(multiplicaciontotal);
+
+                    if(puntos <= 0){
+                        texto += ' y usted ya a consumido todos sus puntos, ahora se restableceran sus puntos a 100';
+                        puntos=100;
+                    }else{
+                        texto += ' y usted tiene ' + puntos + ' puntos';
+                    }
+                    res.cookie(
+                        'puntos',
+                        puntos,
+                        {signed: true}
+                    )
+                    res.send({
+                        message: "la multiplicacion de los dos numeros es: " + multiplicaciontotal + ' ' + texto
+                    })
                 }
             } catch (e) {
                 console.error('Error', e);
@@ -157,15 +220,15 @@ export class HttpCalculatorController{
         @Req() req
 
     ) {
-        const userName = req.cookies.name;
+        const userName = req.cookies.username;
         var puntos = req.signedCookies.puntos;
-        const suma = new CalculatorOperationsDto();
-        suma.number1 = Number(parametrosRuta.number1);
-        suma.number2 = Number(parametrosRuta.number2);
+        const division = new CalculatorOperationsDto();
+        division.number1 = Number(parametrosRuta.number1);
+        division.number2 = Number(parametrosRuta.number2);
 
         if(userName !== undefined) {
             try {
-                const errores: ValidationError[] = await validate(suma);
+                const errores: ValidationError[] = await validate(division);
                 var texto = '';
                 if (errores.length > 0) {
                     console.error('Errores: ', errores);
@@ -173,9 +236,9 @@ export class HttpCalculatorController{
                 } else {
 
                     if (Number(parametrosRuta.number2 != 0)) {
-                        var sumatotal = Number(parametrosRuta.number1) / Number(parametrosRuta.number2);
-                        puntos -= Math.abs(sumatotal);
-                        texto += "la division de los dos numeros es: " + sumatotal;
+                        var divisiontotal = Number(parametrosRuta.number1) / Number(parametrosRuta.number2);
+                        puntos -= Math.abs(divisiontotal);
+                        texto += "la division de los dos numeros es: " + divisiontotal;
                     } else {
                         texto +=  "No es posible dividir un numero para cero"
                     }
