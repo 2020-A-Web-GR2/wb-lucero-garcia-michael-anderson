@@ -1,5 +1,6 @@
-import {Column, Entity, Index, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, Index, OneToMany, PrimaryGeneratedColumn} from "typeorm";
 import {options} from "tsconfig-paths/lib/options";
+import {MascotaEntity} from "../mascota/mascota.entity";
 
 @Index([
 
@@ -75,5 +76,17 @@ export class UsuarioEntity{
         name: 'fecha_nacimiento_nacimiento'
     })
     fechaHoraNacimiento?: string;
+
+
+    // Usuario Entity
+    @OneToMany(
+        type => MascotaEntity,
+        // Que entidad nos relacionamos
+        mascota => mascota.usuario
+        // Campo con el q relacionamos
+    )
+    mascotas: MascotaEntity[];
+
+
 
 }

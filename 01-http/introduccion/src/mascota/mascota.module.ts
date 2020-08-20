@@ -1,6 +1,7 @@
 import {Module} from "@nestjs/common";
 import {TypeOrmModule} from "@nestjs/typeorm";
 import {MascotaEntity} from "./mascota.entity";
+import {MascotaService} from "./mascota.service";
 
 
 @Module({
@@ -15,10 +16,10 @@ import {MascotaEntity} from "./mascota.entity";
             )
     ],
     providers: [
-        //MascotaService
+        MascotaService
     ],
     exports:[
-        //MascotaService
+        MascotaService
     ]
 })
 

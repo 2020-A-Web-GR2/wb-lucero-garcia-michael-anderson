@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a435bc6-40f1-4564-bb4f-6434a762410a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/vacuna/vacuna.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/vacuna/vacuna.entity.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1dVb7oTwVZsGaRRb3Z8PVNY1Yzu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-http/introduccion/src/usuario" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\src\usuario" />
+      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\src\http\Deber01" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a435bc6-40f1-4564-bb4f-6434a762410a" name="Default Changelist" comment="" />
+      <created>1592513045188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592513045188</updated>
+      <workItem from="1592513062131" duration="1168000" />
+      <workItem from="1592593470973" duration="5142000" />
+      <workItem from="1593112128984" duration="1278000" />
+      <workItem from="1593198444568" duration="682000" />
+      <workItem from="1593720082426" duration="2981000" />
+      <workItem from="1593794437237" duration="2907000" />
+      <workItem from="1593798612025" duration="1505000" />
+      <workItem from="1593800145053" duration="440000" />
+      <workItem from="1593800601194" duration="8917000" />
+      <workItem from="1594321301472" duration="5981000" />
+      <workItem from="1594416957999" duration="30000" />
+      <workItem from="1594927480864" duration="8101000" />
+      <workItem from="1595011425117" duration="2540000" />
+      <workItem from="1595014892408" duration="2159000" />
+      <workItem from="1595017067897" duration="4197000" />
+      <workItem from="1595523314330" duration="9553000" />
+      <workItem from="1595617685193" duration="7008000" />
+      <workItem from="1596137309909" duration="4247000" />
+      <workItem from="1596215544951" duration="72000" />
+      <workItem from="1596600002229" duration="6186000" />
+      <workItem from="1596650716813" duration="1311000" />
+      <workItem from="1596661721905" duration="6014000" />
+      <workItem from="1597346385281" duration="4902000" />
+      <workItem from="1597351690979" duration="850000" />
+      <workItem from="1597434037897" duration="3149000" />
+      <workItem from="1597875635689" duration="9510000" />
+    </task>
+    <task id="LOCAL-00001" summary="creacion del proyecto introduccion">
+      <created>1592597467079</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592597467079</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creacion de archivos http modules">
+      <created>1593801450828</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593801450828</updated>
+    </task>
+    <task id="LOCAL-00003" summary="creacion de decoradores get, post, delete, recibir parametros de la URL">
+      <created>1593810576814</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593810576814</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/01-http/introduccion" />
+    </ignored-roots>
+    <MESSAGE value="creacion del proyecto introduccion" />
+    <MESSAGE value="creacion de archivos http modules" />
+    <MESSAGE value="creacion de decoradores get, post, delete, recibir parametros de la URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion de decoradores get, post, delete, recibir parametros de la URL" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="121" key="#Plugins" timestamp="1592598155116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="167" y="121" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1592598155116" />
+    <state x="634" y="27" key="CommitChangelistDialog2" timestamp="1593810575636">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="634" y="27" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593810575636" />
+    <state x="317" y="232" key="FileChooserDialogImpl" timestamp="1593798152200">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="317" y="232" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593798152200" />
+    <state x="38" y="136" key="SettingsEditor" timestamp="1593800556664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="38" y="136" key="SettingsEditor/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1593720689976" />
+    <state x="38" y="136" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593800556664" />
+    <state x="1480" y="374" width="381" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593798408131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1593721082941" />
+    <state x="1480" y="374" width="381" height="171" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1593798408131" />
+    <state x="593" y="308" key="git4idea.merge.GitPullDialog" timestamp="1593798707453">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="593" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1593721100316" />
+    <state x="593" y="308" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593798707453" />
+    <state x="143" y="242" key="run.anything.popup" timestamp="1597437023707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597437023707" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1593800169032">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593800169032" />
+  </component>
+</project>
