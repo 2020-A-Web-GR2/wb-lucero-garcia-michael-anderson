@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a435bc6-40f1-4564-bb4f-6434a762410a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/vacuna/vacuna.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/vacuna/vacuna.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/dto/usuario.create-dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/dto/usuario.update-dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +98,8 @@
       <workItem from="1597346385281" duration="4902000" />
       <workItem from="1597351690979" duration="850000" />
       <workItem from="1597434037897" duration="3149000" />
-      <workItem from="1597875635689" duration="9510000" />
+      <workItem from="1597875635689" duration="9656000" />
+      <workItem from="1597942567462" duration="2918000" />
     </task>
     <task id="LOCAL-00001" summary="creacion del proyecto introduccion">
       <created>1592597467079</created>
