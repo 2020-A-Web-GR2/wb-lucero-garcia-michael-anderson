@@ -5,7 +5,9 @@ import {MascotaService} from "./mascota.service";
 
 
 @Module({
-    controllers: [],
+    controllers: [
+
+    ],
     imports: [
         TypeOrmModule
             .forFeature(
