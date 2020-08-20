@@ -12,11 +12,11 @@ import {options} from "tsconfig-paths/lib/options";
 
 //indice compuesto
 
-@Index([
-    'nombre','apellido','cedula'
-],{
-    unique: true
-})
+//@Index([
+//    'nombre','apellido','cedula'
+//],{
+//   unique: true
+//})
 
 
 

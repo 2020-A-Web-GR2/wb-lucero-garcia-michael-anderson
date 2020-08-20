@@ -21,7 +21,23 @@ export class UsuarioService{
 
     }
     crearUno(nuevoUsiario: UsuarioEntity){
-        this.repositorio.save(nuevoUsiario)
+        return this.repositorio.save(nuevoUsiario)
+    }
+
+    buscarTodos() {
+        return this.repositorio.find() // promesa
+    }
+
+    buscarUno(id: number) {
+        return this.repositorio.findOne(id) // promesa
+    }
+
+    editarUno(usuarioEditado: UsuarioEntity) {
+        return this.repositorio.save(usuarioEditado);
+    }
+
+    eliminarUno(id: number) {
+        return this.repositorio.delete(id);
     }
     
 }

@@ -8,8 +8,9 @@ import {
     BadRequestException,
     Param,
     Query,
-    Body, Req, Res, Put
+    Body, Req, Res, Put, InternalServerErrorException
 } from "@nestjs/common";
+import {UsuarioService} from "./usuario.service";
 
 
 @Controller('usuario-http')
@@ -32,6 +33,11 @@ export class UsuarioController{
     ]
 
     public idActual = 3;
+
+    constructor(
+        private readonly _usuarioService: UsuarioService
+    ) {
+    }
 
 @Get()
     mostrarTodos(){
@@ -59,16 +65,27 @@ export class UsuarioController{
     // DELETE http://localhost:3001/mascota/1
 
     @Post()
-    crearUno(
+    async crearUno(
         @Body() parametrosCuerpo
     ){
-        const nuevoUsuario = {
-            id: this.idActual +1,
-            nombre: parametrosCuerpo.nombre
+        try{
+            //DEBER
+            //VALIDACION CON DTO USUARIO VALIDATOR
+            const respuesta = await this._usuarioService.crearUno(parametrosCuerpo);
+            return respuesta
+        }catch (e) {
+            console.error(e)
+            throw new BadRequestException( {
+                mensaje: 'Error validando datos'
+            });
         }
-        this.arregloUsuarios.push(nuevoUsuario)
-        this.idActual = this.idActual + 1;
-        return nuevoUsuario;
+        //const nuevoUsuario = {
+        //    id: this.idActual +1,
+        //    nombre: parametrosCuerpo.nombre
+        //}
+        //this.arregloUsuarios.push(nuevoUsuario)
+        //this.idActual = this.idActual + 1;
+        //return nuevoUsuario;
     }
 
 
@@ -83,27 +100,67 @@ export class UsuarioController{
     }
 
 
+
+
     @Put(':id')
-    editarUno(
+    async editarUno(
         @Param() parametrosRuta,
         @Body() parametrosCuerpo
     ){
-        const indice = this.arregloUsuarios.findIndex(
-            (usuario) => usuario.id === Number(parametrosRuta.id)
-        )
-        this.arregloUsuarios[indice].nombre = parametrosCuerpo.nombre;
-        return this.arregloUsuarios[indice];
+        const id = Number(parametrosRuta.id);
+        const usuarioEditado = parametrosCuerpo;
+        usuarioEditado.id = id;
+        try {
+            console.log('usuarioEditado', usuarioEditado);
+            const respuesta = await this._usuarioService
+                .editarUno(usuarioEditado);
+            return respuesta;
+        } catch (e) {
+            console.error(e)
+            throw new InternalServerErrorException({
+                mensaje: 'Error del servidor',
+            })
+        }
+
+        // const indice = this.arregloUsuarios.findIndex(
+        //     (usuario) => usuario.id === Number(parametrosRuta.id)
+        // )
+        // this.arregloUsuarios[indice].nombre = parametrosCuerpo.nombre;
+        // return this.arregloUsuarios[indice];
+
+
     }
 
+
+
+
+
+
     @Delete(':id')
-    eliminarUno(
-        @Param() parametrosRuta,
+    async eliminarUno(
+        @Param() parametrosRuta
     ){
-        const indice = this.arregloUsuarios.findIndex(
-            (usuario) => usuario.id === Number(parametrosRuta.id)
-        )
-        this.arregloUsuarios.splice(indice, 1)
-        return this.arregloUsuarios[indice];
+
+        const id = Number(parametrosRuta.id);
+        try {
+            const respuesta = await this._usuarioService
+                .eliminarUno(id);
+            return {
+                mensaje: 'Registro con id ' + id + ' eliminado'
+            };
+        } catch (e) {
+            console.error(e)
+            throw new InternalServerErrorException({
+                mensaje: 'Error del servidor',
+            })
+        }
+
+        // const indice = this.arregloUsuarios.findIndex(
+        //     (usuario) => usuario.id === Number(parametrosRuta.id)
+        // )
+        // this.arregloUsuarios.splice(indice, 1)
+        // return this.arregloUsuarios[indice];
+
     }
 
 }
