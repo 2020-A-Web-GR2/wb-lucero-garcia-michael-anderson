@@ -1,6 +1,6 @@
 import {
     IsAlpha,
-    IsDateString, IsEmail,
+    IsDateString, IsEmail, IsEmpty, IsInt,
     IsNotEmpty, IsNumber,
     IsNumberString,
     IsOptional, IsPositive,
@@ -10,6 +10,11 @@ import {
 } from "class-validator";
 
 export class usuarioUpdateDto{
+
+    @IsNotEmpty()
+    @IsInt()
+    @IsPositive()
+    id:number;
 
     @IsNotEmpty()
     @IsString()
