@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a435bc6-40f1-4564-bb4f-6434a762410a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/views/ejemplo.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos-generales.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/JS/logica-general.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/condiciones.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/merlin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-http/introduccion/views/usuario/crear.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/mascota/mascota.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/ejemplo.ejs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +58,23 @@
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-http/introduccion/src/usuario" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/01-http/introduccion/publico" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\publico" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\publico" />
       <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\src\usuario" />
       <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\src\http\Deber01" />
     </key>
@@ -105,6 +116,13 @@
       <workItem from="1597434037897" duration="3149000" />
       <workItem from="1597875635689" duration="9656000" />
       <workItem from="1597942567462" duration="2918000" />
+      <workItem from="1598036834870" duration="5147000" />
+      <workItem from="1598556350007" duration="605000" />
+      <workItem from="1598557013950" duration="1341000" />
+      <workItem from="1599160318680" duration="727000" />
+      <workItem from="1599161074632" duration="5829000" />
+      <workItem from="1599247250370" duration="5394000" />
+      <workItem from="1599765565621" duration="563000" />
     </task>
     <task id="LOCAL-00001" summary="creacion del proyecto introduccion">
       <created>1592597467079</created>
@@ -155,6 +173,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="creacion de decoradores get, post, delete, recibir parametros de la URL" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="828" y="412" key="#ESLint" timestamp="1599766139986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="828" y="412" key="#ESLint/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1599766139985" />
     <state x="167" y="121" key="#Plugins" timestamp="1592598155116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
