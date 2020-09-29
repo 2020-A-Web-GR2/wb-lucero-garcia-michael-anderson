@@ -1,0 +1,67 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<% const userName = usuario %>
+<% if(userName !== undefined){ %>
+    <% const existeComic = typeof comic != 'undefined'%>
+
+    <% let existeTitulo = typeof titulo !== 'undefined' %>
+    <% let existeAutor = typeof autor !== 'undefined' %>
+    <% let existePrecio = typeof precio !== 'undefined' %>
+    <% let existeCategoria = typeof categoria !== 'undefined' %>
+    <% let existeEdicion = typeof edicion !== 'undefined' %>
+
+
+    <h1> <%= existeComic ? 'Editar' : 'Crear'%> comic</h1>
+    <% let href = existeComic ? "../editarDesdeVista/"+comic.id : "../comic/crearDesdeVista"%>
+    <%if(existeComic){%>
+        <% existeTitulo = true %>
+        <% existeAutor = true %>
+        <% existePrecio = true %>
+        <% existeCategoria = true %>
+        <% existeEdicion = true %>
+        <% titulo = comic.titulo %>
+        <% autor = comic.autor %>
+        <% precio = comic.precio %>
+        <% categoria = comic.categoria %>
+        <% edicion = comic.edicion %>
+    <%}%>
+
+    <% if(error !== undefined) {%>
+        <p>MENSAJE ERROR: <%= error%></p>
+    <% }%>
+    <form action="<%= href%>" method="POST">
+
+        <label for="tituloID">Titulo:</label>
+        <input id="tituloID" type="text" name="titulo" value="<%= existeTitulo ? titulo : '' %>">
+        <br>
+
+        <label for="autorID">Autor:</label>
+        <input id="autorID" type="text" name="autor" value="<%= existeAutor ? autor : '' %>">
+        <br>
+
+        <label for="precioID">Precio:</label>
+        <input id="precioID" type="text" name="precio" value="<%= existePrecio ? precio : '' %>">
+        <br>
+
+        <label for="categoriaID">Categoria:</label>
+        <input id="categoriaID" type="text" name="categoria" value="<%= existeCategoria ? categoria : '' %>">
+        <br>
+
+        <label for="edicionID">Numero de edicion:</label>
+        <input id="edicionID" type="date" name="edicion" value="<%= existeEdicion ? edicion : '' %>">
+        <br>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    <form action="../comic">
+        <button type="submit">CANCEL</button></form>
+
+<% } else {%>
+    <h1>primero, inicie sesion.</h1>
+<% } %>
+</body>
+</html>

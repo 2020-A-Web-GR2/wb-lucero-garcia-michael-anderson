@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style>
+        td, th {
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<% const userName = usuario %>
+<% if(userName !== undefined){ %>
+    <h1>
+        Inicio
+    </h1>
+    <% if(mensaje !== undefined){ %>
+    <p>Mensaje: <%=mensaje%></p>
+    <%}%>
+    <a href="/empresa/crear">
+        <button>Crear</button>
+    </a>
+
+    <form action="/comic"
+          method="get">
+        <label for="busqueda">Buscar: </label>
+        <input id="busqueda" type="text" name="busqueda">
+        <button type="submit">Buscar</button>
+    </form>
+    <table>
+        <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Precio</th>
+            <th>categoria</th>
+            <th>Numero de edicion</th>
+            <th>Acciones</th>
+        </tr>
+        <% arregloComics.forEach( (objeto)=>{ %>
+            <tr>
+                <td><%= objeto.titulo %></td>
+                <td><%= objeto.autor %></td>
+                <td><%= objeto.precio %></td>
+                <td><%= objeto.categoria %></td>
+                <td><%= objeto.edicion %></td>
+                <td>
+                    <a href="../comic/editar/<%= objeto.id %>">
+                        <button>Editar</button>
+                    </a>
+                    <form action="../comic/eliminarDesdeVista/<%= objeto.id %>"
+                          method="POST"
+                    >
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        <% } ) %>
+
+    </table>
+    <a href="../logout">
+        <button>Cerrar sesion</button>
+    </a>
+<% } else {%>
+    <h1>primero, inicie sesion.</h1>
+<% } %>
+</body>
+</html>

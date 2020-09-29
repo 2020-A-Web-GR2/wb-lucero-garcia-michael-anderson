@@ -20,14 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a435bc6-40f1-4564-bb4f-6434a762410a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/src/comic/comic.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/src/comic/comic.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/src/comic/comic.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/src/comic/comic.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/src/comic/dto/comic.create.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/src/comic/dto/comic.update.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/views/crearComic.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/views/home.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ComicExam/comic/views/login/login.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/app.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/compartido/menu/menu-component.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/views/compartido/menu/menu-component.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/usuario/crear.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/views/usuario/crear.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/usuario/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/views/usuario/inicio.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ComicExam/comic" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1dVb7oTwVZsGaRRb3Z8PVNY1Yzu" />
@@ -54,6 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -67,17 +72,20 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\publico" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\publico" />
       <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\src\usuario" />
       <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\src\http\Deber01" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\ComicExam\comic\views\login" />
+      <recent name="C:\Users\ander\Documents\wb-lucero-garcia-michael-anderson\01-http\introduccion\publico" />
+    </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,7 +139,12 @@
       <workItem from="1601088998844" duration="185000" />
       <workItem from="1601243790812" duration="14110000" />
       <workItem from="1601302465889" duration="10297000" />
-      <workItem from="1601349515088" duration="940000" />
+      <workItem from="1601349515088" duration="1364000" />
+      <workItem from="1601355075647" duration="1983000" />
+      <workItem from="1601358116505" duration="925000" />
+      <workItem from="1601390200652" duration="3255000" />
+      <workItem from="1601393553856" duration="1975000" />
+      <workItem from="1601396511118" duration="3122000" />
     </task>
     <task id="LOCAL-00001" summary="creacion del proyecto introduccion">
       <created>1592597467079</created>
@@ -158,7 +171,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -182,14 +195,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="creacion de decoradores get, post, delete, recibir parametros de la URL" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="828" y="412" key="#ESLint" timestamp="1599766139986">
+    <state x="828" y="412" key="#ESLint" timestamp="1601396567427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="412" key="#ESLint/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1599766139985" />
-    <state x="167" y="121" key="#Plugins" timestamp="1592598155116">
+    <state x="828" y="412" key="#ESLint/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601396567427" />
+    <state x="706" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601390823336">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="167" y="121" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1592598155116" />
+    <state x="706" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1601390823336" />
     <state x="634" y="27" key="CommitChangelistDialog2" timestamp="1593810575636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
