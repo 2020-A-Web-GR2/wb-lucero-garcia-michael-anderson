@@ -28,10 +28,21 @@
 
 </ur>
 
-<a href="/usuario/vista/crear">
+<a href="/usuario-http/vista/crear">
     <button>Crear</button>
 </a>
 
+<%if(typeof parametrosConsulta!= 'undefined'){%>
+<p> Mensaje:<%=parametrosConsulta.mensaje%></p>
+<%}%>
+
+
+<form action="/usuario-http/vista/inicio"
+      method="GET">
+    <label for="busqueda">Buscar: </label>
+    <input id="busqueda" type="text" name="busqueda">
+    <button type="submit">Buscar</button>
+</form>
 
 <table>
     <!-- table row -->
@@ -50,9 +61,14 @@
             <td><%= objeto.cedula%></td>
             <td>
                 <button>Ver</button>
-                <button>Editar</button>
-                <button>Eliminar</button>
+                <a href="/usuario-http/vista/editar/<%= objeto.id %>">
+                    <button>Editar</button>
+                </a>
+                <form action="/usuario-http/eliminarDesdeVista/<%= objeto.id %>"
+                      method="POST">
 
+                    <button type="submit">Eliminar</button>
+                </form>
             </td>
         </tr>
 

@@ -20,15 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a435bc6-40f1-4564-bb4f-6434a762410a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos-generales.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/JS/logica-general.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/condiciones.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/publico/merlin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-http/introduccion/views/usuario/crear.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos.css" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/publico/CSS/estilos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/ejemplo.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/src/usuario/usuario.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/compartido/menu/menu-component.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/views/compartido/menu/menu-component.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/usuario/crear.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/views/usuario/crear.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-http/introduccion/views/usuario/inicio.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/01-http/introduccion/views/usuario/inicio.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,7 @@
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -123,6 +122,16 @@
       <workItem from="1599161074632" duration="5829000" />
       <workItem from="1599247250370" duration="5394000" />
       <workItem from="1599765565621" duration="563000" />
+      <workItem from="1599852196758" duration="1288000" />
+      <workItem from="1600887294934" duration="601000" />
+      <workItem from="1600976374241" duration="1217000" />
+      <workItem from="1601074769302" duration="2966000" />
+      <workItem from="1601078598315" duration="1961000" />
+      <workItem from="1601081992484" duration="1728000" />
+      <workItem from="1601088998844" duration="185000" />
+      <workItem from="1601243790812" duration="14110000" />
+      <workItem from="1601302465889" duration="10297000" />
+      <workItem from="1601349515088" duration="940000" />
     </task>
     <task id="LOCAL-00001" summary="creacion del proyecto introduccion">
       <created>1592597467079</created>
