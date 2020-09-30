@@ -14,7 +14,7 @@ import {TypeOrmModule} from "@nestjs/typeorm";
       host: 'localhost',    //ip
       port: 3306,           //puerto
       username: 'root',     //usuario
-      password: 'root',     //contraseÃ±a
+      password: 'anderson',     //contraseÃ±a
       database: 'examen',     //base de datos
       entities: [           //Todas las entidades
         ComicEntity

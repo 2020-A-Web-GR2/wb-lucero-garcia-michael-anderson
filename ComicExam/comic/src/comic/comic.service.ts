@@ -10,8 +10,8 @@ export class ComicService{
     ) {
     }
 
-    crearUno(empresa: ComicEntity){
-        return this.repositorio.save(empresa);
+    crearUno(comic: ComicEntity){
+        return this.repositorio.save(comic);
     }
 
     buscarTodos(textoDeConsulta?:String){
@@ -19,10 +19,10 @@ export class ComicService{
             const consulta: FindManyOptions<ComicEntity> = {
                 where: [
                     {
-                        nombre: Like(`%${textoDeConsulta}%`)
+                        titulo: Like(`%${textoDeConsulta}%`)
                     },
                     {
-                        ciudad: Like(`%${textoDeConsulta}%`)
+                        autor: Like(`%${textoDeConsulta}%`)
                     }
                 ]
             }
@@ -36,8 +36,8 @@ export class ComicService{
         return this.repositorio.findOne(id);
     }
 
-    editarUno(empresa: ComicEntity){
-        return this.repositorio.save(empresa);
+    editarUno(comic: ComicEntity){
+        return this.repositorio.save(comic);
     }
 
     eliminarUno(id: number){

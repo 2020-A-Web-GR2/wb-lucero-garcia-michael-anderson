@@ -7,12 +7,12 @@ import {
     Param, Post,
     Query,
     Res,
-    Session, ValidationError
+    Session
 } from "@nestjs/common";
 import {ComicService} from "./comic.service";
 import {ComicUpdateDto} from "./dto/comic.update.dto";
-import validate = WebAssembly.validate;
 import {ComicEntity} from "./comic.entity";
+import {validate, ValidationError} from "class-validator";
 
 @Controller('/comic')
 
@@ -106,18 +106,17 @@ export class ComicController{
         @Body() parametrosCuerpo,
         @Res() res,
     ) {
-        const comic = new ComicUpdateDto();
+        let comic = new ComicUpdateDto();
         
         comic.titulo = parametrosCuerpo.titulo;
         comic.autor = parametrosCuerpo.autor;
-        comic.precio = parametrosCuerpo.precio;
+        comic.precio = Number(parametrosCuerpo.precio);
         comic.categoria = parametrosCuerpo.categoria;
-        comic.edicion = parametrosCuerpo.edicion
+        comic.edicion = Number(parametrosCuerpo.edicion);
         
         let errores: ValidationError[]
         try{
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
+
             errores = await validate(comic);
             const mensaje = '';
         }catch (e) {
@@ -152,20 +151,20 @@ export class ComicController{
         @Body() parametrosCuerpo,
         @Res() res
     ) {
-        const comic = new ComicUpdateDto();
+        let comic = new ComicUpdateDto();
 
         comic.titulo = parametrosCuerpo.titulo;
         comic.autor = parametrosCuerpo.autor;
-        comic.precio = parametrosCuerpo.precio;
+        comic.precio = Number(parametrosCuerpo.precio);
         comic.categoria = parametrosCuerpo.categoria;
-        comic.edicion = parametrosCuerpo.edicion
+        comic.edicion = Number(parametrosCuerpo.edicion);
 
-        const comicConsulta = `&titulo=${parametrosCuerpo.titulo}&autor=${parametrosCuerpo.autor}&precio=${parametrosCuerpo.precio}&categoria=${parametrosCuerpo.categoria}&edicion=${parametrosCuerpo.edicion}`
+        let comicConsulta = `&titulo=${parametrosCuerpo.titulo}&autor=${parametrosCuerpo.autor}&precio=${parametrosCuerpo.precio}&categoria=${parametrosCuerpo.categoria}&edicion=${parametrosCuerpo.edicion}`
         let errores: ValidationError[]
         try{
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
+
             errores = await validate(comic);
+
             const mensaje = '';
         }catch (e) {
             console.error(e)

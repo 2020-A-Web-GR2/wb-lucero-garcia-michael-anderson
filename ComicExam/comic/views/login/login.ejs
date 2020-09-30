@@ -1,18 +1,39 @@
-<h1>Iniciar sesion</h1>
+
 <form action="/login" method="post">
-    <div>
-        <label for="userID">Usuario: </label>
-        <input type="text"
-               id="userID"
-               name="usuario">
+
+    <style>
+        .contenedor
+        {
+            height:100px;
+            line-height:50px;
+            border:1px solid;
+            text-align:center;
+            background: #1E8449;
+        }
+
+    </style>
+
+
+    <div class="contenedor">
+
+        <h1>Iniciar sesion</h1>
+
+        <div>
+            <label for="userID">Usuario: </label>
+            <input type="text"
+                   id="userID"
+                   name="usuario">
+        </div>
+        <div>
+            <label for="passwordID">Contraseña: </label>
+            <input type="password"
+                   id="PaswordID"
+                   name="password">
+        </div>
+        <div>
+            <button type="submit">Ingresar</button>
+        </div>
+
     </div>
-    <div>
-        <label for="passwordID">Contraseña: </label>
-        <input type="password"
-               id="PaswordID"
-               name="password">
-    </div>
-    <div>
-        <button type="submit">Ingresar</button>
-    </div>
+
 </form>
